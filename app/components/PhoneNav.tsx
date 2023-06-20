@@ -25,7 +25,7 @@ const PhoneNav = (props: Props) => {
   }
 
   return (
-    <div className=" bg-yellow-500">
+    <div className=" ">
       {/* phone div */}
       <AnimatePresence>
         {isOpen && (

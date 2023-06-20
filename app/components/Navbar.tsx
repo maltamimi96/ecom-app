@@ -27,14 +27,16 @@ const Navbar = (props: Props) => {
   }
   return (
     <>
-      <motion.nav className="   bg-yellow-500 p-4">
+      <motion.nav className="    p-4">
         {/* phone div */}
         <PhoneNav />
         {/* // desktop nav */}
         <div className="relative hidden lg:grid lg:grid-cols-2   ">
           <div className="flex  items-center  justify-start gap-10 px-4 w-full ">
-            <Link href={"/"} className="text-4xl font-black flex-shrink-0">
-              JB HI-FI
+            <Link
+              href={"/"}
+              className="text-4xl font-black flex-shrink-0 italic">
+              Modesty House
             </Link>
             <div className="w-fit ">
               <input

@@ -1,5 +1,5 @@
 import React from "react"
-import ProductCard from "./ProductCard"
+import ProductDetails from "../components/products/ProductDetails"
 
 type Props = {}
 const exampleProduct: Product = {
@@ -45,16 +45,13 @@ const exampleProduct: Product = {
     },
   ],
 }
-const HomeProducts = (props: Props) => {
+
+const page = (props: Props) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
-      <ProductCard product={exampleProduct} />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-    </div>
+    <main className="max-w-7xl m-auto">
+      <ProductDetails product={exampleProduct} />
+    </main>
   )
 }
 
-export default HomeProducts
+export default page

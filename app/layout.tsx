@@ -18,14 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full text-white text-center text-sm bg-green-700 p-2">
-          <h1 className="font-bold">
-            Seen it Cheaper?{" "}
-            <span className="font-normal">
-              Ask our team for a JB Deal. Live chat with us or call 13 52 44.
-            </span>
-          </h1>
-        </div>
         <Navbar />
         <Categories />
         {children}
